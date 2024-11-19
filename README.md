@@ -1,71 +1,58 @@
-# LSE DS105A 2024/25
+# LSE DS105A 2024/25: Data for Data Science
 
-A repository for all the lecture and class materials used in the Autumn Term edition of DS105A (2024/25) at LSE
+<figure>
+    <img src="./figures/ds105/DS105A_person_icon.jpeg" alt="Image created with the AI embedded in MS Designer using the prompt 'abstract salmon pink light blue icon depicting the metaphysical experience of cleaning up, reshaping, pivoting, and manipulating data in search of the purest insights in data science.'" title="Image created with the AI embedded in MS Designer using the prompt 'abstract salmon pink light blue icon depicting the metaphysical experience of cleaning up, reshaping, pivoting, and manipulating data in search of the purest insights in data science.''" role="presentation" style="object-fit: cover;width:5em;height:5em;border-radius: 50%;margin-bottom:1em;">
+</figure>
 
+Welcome to the central hub for all lecture and class materials used in the Autumn Term edition of DS105A (2024/25) at LSE. This repository embodies the course's core principles: clear communication, reproducible code, and insightful data exploration.
 
-## How to fork this repository?
+## 🔗 Links
 
-1. Click on the `Fork` button on the top right corner of this page.
+- **Course Website:** Access the [public course website](https://lse-dsi.github.io/DS105) or the [Moodle page](https://moodle.lse.ac.uk/course/info.php?id=9236) (LSE students only) for the latest updates and announcements.
 
-2. You'll be redirected to your own forked repository.
+## 🧭 Navigating the Repository
 
-3. Now, you can clone this repository to your local machine and start working on it.
+The repository has recently undergone a [reorganisation](https://github.com/lse-ds105/ds105a-2024/issues/3) and materials are now structured as follows:
 
-## How to bring the changes from the original repository to your forked repository?
-
-There are two options to do this, and it will depend on whether you have made changes to your forked repository or not.
-
-### Option 1: You haven't made any changes to your forked repository
-
-(Or you have made changes but you don't care about losing them)
-
-1. Go to your forked repository on GitHub. You will see a message 'This branch is X commits behind lse-ds105/ds105a-2024:main'.
-
-2. Click on the **'Sync Fork'** button.
-
-3. Click on the **'Update branch'** button.
-
-4. You will see a message 'This branch is up to date with lse-ds105/ds105a-2024:main'. Done!
-
-### Option 2: If you want to keep the changes in your forked repository
-
-(You've made changes and you want to keep them)
-
-1. On your local machine, instruct Git that there is a remote repository called `upstream` that points to the original repository.
-
-```bash
-git remote add upstream git@github.com:lse-ds105/ds105a-2024.git
+```
+ds105a-2024/
+│
+├── notebooks/
+│   ├── ... # Lecture and lab notebooks
+│
+├── data/
+│   ├── ... # Folders and files with datasets
+│
+├── figures/
+│   ├── ... # Figures referenced in notebooks
+│
+├── .gitignore # Python-specific .gitignore file
+└── README.md
 ```
 
-2. Instruct git to take a look at the changes in the original repository.
+Notebook names follow the format `WXX-[Lecture/Lab]-[Topic].ipynb`, where `XX` is the week number.
 
-```bash
-git fetch upstream/main
-```
+Found an issue with a notebook or anoter file? Create a [new issue](https://github.com/lse-ds105/ds105a-2024/issues/new) and explain the problem. 
 
-3. Merge the changes from the original repository to your forked repository.
+## 🚀 Getting Started
 
-```bash
-git merge upstream/main
-```
+1. **Fork this repository:** Click the 'Fork' button at the top right to create a copy under your GitHub account. This allows you to experiment and learn without affecting the original repository.
 
-This might lead to [git conflicts](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts) if you have made changes to the same files in your forked repository. You will need to resolve these conflicts manually. Ask any instructors for help if you're not sure how to do this.
+2. **Clone your forked repository:** Use `git clone` to download a copy to your local machine or the Nuvolos platform. Replace `<username>` with your GitHub username.
 
-4. Push the changes to your forked repository.
+    ```bash
+    git clone git@github.com:lse-ds105/ds105a-2024-<username>.git
+    ```
 
-```bash
-git push origin main
-```
+3. **Stay Updated:** Regularly fetch and merge changes from the original repository using these commands:
+    ```bash
+    git fetch upstream/main
+    git merge upstream/main
+    ```
 
-or simply
+    (Fix [merge conflicts](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts) if needed.)
 
-```bash
-git push
-```
+## 🙏 Acknowledgements
 
-(as by default, your forked repository is the origin)
-
-5. Done!
-
-
+This repository is maintained by Dr. [Jon Cardoso-Silva](https://github.com/jonjoncardoso) and the teaching team of DS105A, [Alex Soldatkin](https://github.com/alex-soldatkin) and [Riya Chhikara](https://github.com/RiyaChhikara). Alex, in particular, has made several contributions to the content (datasets and lab suggestions). Many thanks also to the course representatives, [Courtney Powers](https://github.com/cmpowers9) and [Doris Huang](dorishuang033) who have provided valuable feedback on the course materials.
 
