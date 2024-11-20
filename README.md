@@ -43,8 +43,13 @@ Found an issue with a notebook or anoter file? Create a [new issue](https://gith
     ```bash
     git clone git@github.com:lse-ds105/ds105a-2024-<username>.git
     ```
+3. **Add the `upstream` remote:**
 
-3. **Stay Updated:** Regularly fetch and merge changes from the original repository using these commands:
+    ```bash
+    git remote add upstream git@github.com:lse-ds105/ds105a-2024.git
+    ```
+
+4. **Stay Updated:** Regularly fetch and merge changes from the original repository using these commands:
     ```bash
     git fetch upstream/main
     git merge upstream/main
