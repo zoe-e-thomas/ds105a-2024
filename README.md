@@ -51,8 +51,8 @@ Found an issue with a notebook or anoter file? Create a [new issue](https://gith
 
 4. **Stay Updated:** Regularly fetch and merge changes from the original repository using these commands:
     ```bash
-    git fetch upstream/main
-    git merge upstream/main
+    git fetch upstream main
+    git merge upstream main
     ```
 
     (Fix [merge conflicts](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts) if needed.)
