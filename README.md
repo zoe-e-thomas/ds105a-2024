@@ -50,10 +50,16 @@ Found an issue with a notebook or anoter file? Create a [new issue](https://gith
     git remote add upstream git@github.com:lse-ds105/ds105a-2024.git
     ```
 
-4. **Stay Updated:** Regularly fetch and merge changes from the original repository using these commands:
+4. **Add the `upstream` remote:**
+
     ```bash
-    git fetch upstream/main
-    git merge upstream/main
+    git remote add upstream git@github.com:lse-ds105/ds105a-2024.git
+    ```
+
+5. **Stay Updated:** Regularly fetch and merge changes from the original repository using these commands:
+    ```bash
+    git fetch upstream main
+    git merge upstream main
     ```
 
     (Fix [merge conflicts](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts) if needed.)
@@ -115,7 +121,7 @@ You should see a `(.venv)` in your terminal prompt now.
     pip install -r requirements.txt
     ```
 
-4. Use the same kernel when running Jupyter notebooks:
+4. Use the same kernel when running Jupyter notebooks.
 
 ## 🙏 Acknowledgements
 
