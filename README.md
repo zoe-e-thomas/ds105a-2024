@@ -38,24 +38,90 @@ Found an issue with a notebook or anoter file? Create a [new issue](https://gith
 
 1. **Fork this repository:** Click the 'Fork' button at the top right to create a copy under your GitHub account. This allows you to experiment and learn without affecting the original repository.
 
-2. **Clone your forked repository:** Use `git clone` to download a copy to your local machine or the Nuvolos platform. Replace `<username>` with your GitHub username.
+2. **Clone your forked repository:** Use `git clone` to download a copy to your local machine or the Nuvolos platform. Replace `<username>` with your GitHub username (remove the `<>` symbols).
 
     ```bash
-    git clone git@github.com:lse-ds105/ds105a-2024-<username>.git
+    git clone git@github.com:<username>/ds105a-2024.git
     ```
-3. **Add the `upstream` remote:**
+
+3. **Add a pointer to the 'upstream' repository:** This allows you to fetch changes from the original repository.
 
     ```bash
     git remote add upstream git@github.com:lse-ds105/ds105a-2024.git
     ```
 
-4. **Stay Updated:** Regularly fetch and merge changes from the original repository using these commands:
+4. **Add the `upstream` remote:**
+
+    ```bash
+    git remote add upstream git@github.com:lse-ds105/ds105a-2024.git
+    ```
+
+5. **Stay Updated:** Regularly fetch and merge changes from the original repository using these commands:
     ```bash
     git fetch upstream main
     git merge upstream main
     ```
 
     (Fix [merge conflicts](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts) if needed.)
+
+## 🐍 Python environment
+
+To guarantee that the code runs smoothly, we recommend creating a [virtual environment](https://www.geeksforgeeks.org/python-virtual-environment/). If you already have `conda` installed, it's straightforward to create a new environment. If not, you can use Python's built-in `venv` module.
+
+👉🏻 If you type `conda` on your terminal and it says "command not found," then you probably don't have it installed. In that case, you can use Python's built-in `venv` module to create a virtual environment.
+
+1. If you already have conda installed: 
+
+    - you can create a new environment with the following command:
+
+        ```bash
+        conda create -n .venv
+        ```
+
+    - Then, activate the environment:
+
+        ```bash
+        conda activate .venv
+        ```
+
+    - Install `pip` inside conda:
+
+        ```bash
+        conda install pip
+        ```
+
+2. Otherwise, let's use `venv`. 
+
+    - On the command line, run the following commands:
+
+        ```bash
+        cd /path/to/ds105a-2024
+        python -m venv .venv
+        ```
+
+    - Then, activate the virtual environment.
+
+        If on Windows, run:
+
+        ```powershell
+        .venv\Scripts\activate
+        ```
+
+        If on MacOS or Linux, run:
+
+        ```bash
+        source .venv/bin/activate
+        ```
+
+You should see a `(.venv)` in your terminal prompt now.
+
+3. Install the required packages:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. Use the same kernel when running Jupyter notebooks.
 
 ## 🙏 Acknowledgements
 
