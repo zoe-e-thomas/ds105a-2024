@@ -38,13 +38,19 @@ Found an issue with a notebook or anoter file? Create a [new issue](https://gith
 
 1. **Fork this repository:** Click the 'Fork' button at the top right to create a copy under your GitHub account. This allows you to experiment and learn without affecting the original repository.
 
-2. **Clone your forked repository:** Use `git clone` to download a copy to your local machine or the Nuvolos platform. Replace `<username>` with your GitHub username.
+2. **Clone your forked repository:** Use `git clone` to download a copy to your local machine or the Nuvolos platform. Replace `<username>` with your GitHub username (remove the `<>` symbols).
 
     ```bash
-    git clone git@github.com:lse-ds105/ds105a-2024-<username>.git
+    git clone git@github.com:<username>/ds105a-2024.git
     ```
 
-3. **Stay Updated:** Regularly fetch and merge changes from the original repository using these commands:
+3. **Add a pointer to the 'upstream' repository:** This allows you to fetch changes from the original repository.
+
+    ```bash
+    git remote add upstream git@github.com:lse-ds105/ds105a-2024.git
+    ```
+
+4. **Stay Updated:** Regularly fetch and merge changes from the original repository using these commands:
     ```bash
     git fetch upstream/main
     git merge upstream/main
