@@ -1,0 +1,173 @@
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <script type="text/javascript" data-lets-plot-script="library" src="https://cdn.jsdelivr.net/gh/JetBrains/lets-plot@v4.3.3/js-package/distr/lets-plot.min.js"></script>
+   </head>
+   <body>
+          <div id="cXvqGr"></div>
+   <script type="text/javascript" data-lets-plot-script="plot">
+       var plotSpec={
+"data":{
+"settlement_type":["Small towns","Medium towns","Large towns","Cities","Inner London","Outer London","Small towns","Medium towns","Large towns","Cities","Inner London","Outer London","Small towns","Medium towns","Large towns","Cities","Inner London","Outer London"],
+"attainment":["Level 3 qualifications at age 18","Level 3 qualifications at age 18","Level 3 qualifications at age 18","Level 3 qualifications at age 18","Level 3 qualifications at age 18","Level 3 qualifications at age 18","In full-time higher education at age 19","In full-time higher education at age 19","In full-time higher education at age 19","In full-time higher education at age 19","In full-time higher education at age 19","In full-time higher education at age 19","In further education at age 19","In further education at age 19","In further education at age 19","In further education at age 19","In further education at age 19","In further education at age 19"],
+"percentage":[49.7,47.7,47.3,42.3,53.5,57.1,20.6,20.1,19.2,20.7,14.0,14.3,33.3,32.6,33.6,32.8,49.3,48.5]
+},
+"mapping":{
+"x":"percentage",
+"y":"settlement_type",
+"fill":"attainment"
+},
+"data_meta":{
+"series_annotations":[{
+"column":"settlement_type",
+"factor_levels":["Small towns","Medium towns","Large towns","Cities","Outer London","Inner London"]
+},{
+"column":"attainment",
+"factor_levels":["Level 3 qualifications at age 18","In full-time higher education at age 19","In further education at age 19"]
+}]
+},
+"facet":{
+"name":"grid",
+"x":"attainment",
+"x_order":-1.0,
+"y_order":1.0
+},
+"ggtitle":{
+"text":"\nCities (outside London) have lower average attainment at age 18 \nthan towns, but similar levels of enrolment in higher education\n",
+"subtitle":"\nProportion of the 2012 to 2013 GCSE cohort achieving Level 3 qualification at age 18, \nparticipating in further education or higher education at age 19, by towns and \ncities groupings, England\n"
+},
+"caption":{
+"text":"\nSource: Office for National Statistics analysis using Longitudinal Education Outcomes (LEO), \nDepartment for Education, Index of Multiple Deprivation 2019 from the Department for \nLevelling Up, Housing and Communities (DLUHC)\n(this is a replica of a plot that exists in the UK ONS website)\n"
+},
+"ggsize":{
+"width":700.0,
+"height":468.0
+},
+"theme":{
+"text":{
+"family":"Helvetica",
+"blank":false
+},
+"axis_text":{
+"family":"Helvetica",
+"size":13.0,
+"blank":false
+},
+"panel_grid_major":{
+"blank":true
+},
+"panel_grid_minor":{
+"blank":true
+},
+"plot_title":{
+"family":"Helvetica",
+"face":"bold",
+"size":16.0,
+"vjust":0.0,
+"margin":[10.0,0.0,0.0,0.0],
+"blank":false
+},
+"plot_subtitle":{
+"family":"Helvetica",
+"size":14.0,
+"vjust":1.0,
+"margin":[10.0,0.0,0.0,0.0],
+"blank":false
+},
+"plot_caption":{
+"family":"Helvetica",
+"size":10.0,
+"hjust":-1.0,
+"margin":[0.0,0.0,0.0,244.0],
+"blank":false
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"fill",
+"guide":"none",
+"values":["#3EA0CC","#2F8C7B","#133B57"]
+},{
+"aesthetic":"x",
+"breaks":[0.0,20.0,40.0,60.0],
+"limits":[0.0,60.0],
+"format":"d"
+},{
+"aesthetic":"y",
+"limits":["Inner London","Outer London","Cities","Large towns","Medium towns","Small towns"],
+"discrete":true,
+"reverse":false
+},{
+"name":"",
+"aesthetic":"x"
+},{
+"name":"",
+"aesthetic":"y"
+}],
+"layers":[{
+"geom":"bar",
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"column":"settlement_type",
+"factor_levels":["Small towns","Medium towns","Large towns","Cities","Outer London","Inner London"]
+},{
+"column":"attainment",
+"factor_levels":["Level 3 qualifications at age 18","In full-time higher education at age 19","In further education at age 19"]
+}]
+},
+"fill":"#ECECEC",
+"x":60.0,
+"orientation":"y",
+"data":{
+"..count..":[1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0],
+"settlement_type":["Small towns","Medium towns","Large towns","Cities","Inner London","Outer London","Small towns","Medium towns","Large towns","Cities","Inner London","Outer London","Small towns","Medium towns","Large towns","Cities","Inner London","Outer London"],
+"attainment":["Level 3 qualifications at age 18","Level 3 qualifications at age 18","Level 3 qualifications at age 18","Level 3 qualifications at age 18","Level 3 qualifications at age 18","Level 3 qualifications at age 18","In further education at age 19","In further education at age 19","In further education at age 19","In further education at age 19","In further education at age 19","In further education at age 19","In full-time higher education at age 19","In full-time higher education at age 19","In full-time higher education at age 19","In full-time higher education at age 19","In full-time higher education at age 19","In full-time higher education at age 19"]
+}
+},{
+"geom":"bar",
+"stat":"identity",
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"column":"settlement_type",
+"factor_levels":["Small towns","Medium towns","Large towns","Cities","Outer London","Inner London"]
+},{
+"column":"attainment",
+"factor_levels":["Level 3 qualifications at age 18","In full-time higher education at age 19","In further education at age 19"]
+}]
+},
+"orientation":"y",
+"data":{
+}
+},{
+"geom":"text",
+"mapping":{
+"label":"percentage"
+},
+"data_meta":{
+"series_annotations":[{
+"column":"settlement_type",
+"factor_levels":["Small towns","Medium towns","Large towns","Cities","Outer London","Inner London"]
+},{
+"column":"attainment",
+"factor_levels":["Level 3 qualifications at age 18","In full-time higher education at age 19","In further education at age 19"]
+}]
+},
+"label_format":"d",
+"nudge_x":-5.0,
+"ha":"left",
+"size":7.0,
+"color":"white",
+"data":{
+}
+}],
+"metainfo_list":[]
+};
+       var plotContainer = document.getElementById("cXvqGr");
+       LetsPlot.buildPlotFromProcessedSpecs(plotSpec, -1, -1, plotContainer);
+   </script>
+   </body>
+</html>
