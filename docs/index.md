@@ -1,5 +1,5 @@
 
-<img src="/images/DS105A_person_icon.jpeg" alt="DS105A icon" style="display: block; margin: 2em auto; object-fit: cover; width:5em; height:5em; border-radius: 50%;">
+<img src="DS105A_person_icon.jpeg" alt="DS105A icon" style="display: block; margin: 2em auto; object-fit: cover; width:5em; height:5em; border-radius: 50%;">
 
 # 🧑‍🏫 Week 10 Analysis (LSE DS105A 2024/25)
 
@@ -26,4 +26,4 @@ In cities (outside of London), attainment by age 18 years was lower than in smal
 
 This could reflect easier access to university and other further education opportunities, with pupils in cities perhaps less likely to face the financial burden of moving away from home to study. This may also partially explain why pupils from Inner London were the most likely to go on to higher education.
 
-![](/images/plot1_edu_attainment.svg)
+![](plot1_edu_attainment.svg)
